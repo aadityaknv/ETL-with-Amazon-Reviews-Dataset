@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rating</th>
+          <th>Total Helpful Votes Count</th>
+          <th>Total Votes Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rating, votes in results.items() %}
+        <tr>
+          <td>{{ rating }}</td>
+          <td>{{ votes['helpful_votes'] }}</td>
+          <td>{{ votes['total_votes'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

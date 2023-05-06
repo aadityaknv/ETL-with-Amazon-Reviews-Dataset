@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rating</th>
+          <th>Product Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rating, count in results.items() %}
+        <tr>
+          <td>{{ rating }}</td>
+          <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

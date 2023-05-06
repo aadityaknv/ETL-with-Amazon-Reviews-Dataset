@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Review Search</title>
+  </head>
+  <body>
+    <h1>Search for Amazon Reviews</h1>
+    <h2>Filter by Votes</h2>
+    <form action="/reviewHeadlinesWithVotes" method="POST">
+      <label for="vote_filter">Select a vote filter:</label>
+      <select name="votes_option" id="vote_filter">
+        <option value="with_votes">Reviews with Votes</option>
+        <option value="without_votes">Reviews without Votes</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+

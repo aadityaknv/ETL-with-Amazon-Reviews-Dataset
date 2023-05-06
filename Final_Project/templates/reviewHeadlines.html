@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Review Search Results</title>
+  </head>
+  <body>
+    <h1>Amazon Review Search Results</h1>
+    <p>You are viewing {{ votes_option }} review headlines:</p>
+    <ul>
+      {% for headline in review_headlines %}
+        <li>{{ headline }}</li>
+      {% endfor %}
+    </ul>
+    <a href="/reviewHeadlinesWithVotes">Back to Filter</a>
+  </body>
+</html>

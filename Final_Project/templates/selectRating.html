@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <form action="/selectRating" method="GET">
+      <label for="query">Enter {{ field_name }} from 1-5 :</label>
+      <input type="text" id="query" name="query">
+      <br><br>
+      <input type="hidden" name="title" value="{{ title }}">
+      <input type="hidden" name="field_name" value="{{ field_name }}">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
